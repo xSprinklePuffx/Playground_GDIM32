@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Platforms
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 3856173263
+    locked: 0
+  - name: Mountains
+    uniqueID: 1755823267
+    locked: 0
+  - name: Clouds
+    uniqueID: 189871387
+    locked: 0
+  - name: Midground
+    uniqueID: 1864483805
+    locked: 0
+  - name: Midground2
+    uniqueID: 1125212937
     locked: 0
