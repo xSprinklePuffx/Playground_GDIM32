@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         rb2D = gameObject.transform.GetComponent<Rigidbody2D>();
 
         moveSpeed = 5f;
-        jumpSpeed = 115f;
+        jumpSpeed = 118f;
     }
 
     //Here we are checking if our player s touching the ground

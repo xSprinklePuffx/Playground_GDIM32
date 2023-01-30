@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 1120185368993646589}
   - component: {fileID: 5348285905178286853}
   - component: {fileID: 7903149614754810324}
-  - component: {fileID: 3886005331182115845}
+  - component: {fileID: 9211924696721110213}
   m_Layer: 0
   m_Name: MysteryBox
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3431153, y: 1.3334873}
   m_EdgeRadius: 0
---- !u!114 &3886005331182115845
+--- !u!114 &9211924696721110213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,5 +124,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3227d9dd0ff203f4c83d1b69a586cd55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupEffect: {fileID: 0}
-  activeTime: 4
+  powerupEffect: {fileID: 11400000, guid: a675625cb0117924cabe9d12b57ff274, type: 2}
+  activeTime: 0.5
