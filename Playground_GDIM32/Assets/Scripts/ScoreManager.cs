@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Here we are creating a singleton for our ScoreManager
     static public ScoreManager Instance { get; private set; }
 

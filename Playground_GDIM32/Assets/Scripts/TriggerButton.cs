@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TriggerButton : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Bool for when the trigger is active
     //Serializing our Triggeractivation which will have to be an object that has the LeverSwitch script attatched to it
     //Also accessing our animator attatched to the button

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class FireTraps : MonoBehaviour
 {
+
+    //Script by: Samantha Zavaleta Gonzalez
+
+
     //Accessing the animator connected to our firetraps
     private Animator anim;
 

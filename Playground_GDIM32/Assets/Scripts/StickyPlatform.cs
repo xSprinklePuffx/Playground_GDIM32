@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StickyPlatform : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //This script is attatched to all platforms that require movement with the player
     //If our player land on a moving platform they will become a child of that game object which means they will follow the game object wherever it goes
     //Without this the platform would keep on moving and leave the player behind

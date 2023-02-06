@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TriggerPlatformMovement : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Setting a bool for when our platform can move
     public bool canMove;
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour
 {
+    //Script by: Markesha Cody Big
+
     //Here we are serializing our target which will be our player as well as the camera offset
     [SerializeField] Transform target;
     [SerializeField] Vector3 offset;

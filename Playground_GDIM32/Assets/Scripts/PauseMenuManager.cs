@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuManager : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Creating a bool for if our game is paused
     public static bool GameIsPaused = false;
 

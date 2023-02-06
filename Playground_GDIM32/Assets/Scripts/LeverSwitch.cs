@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LeverSwitch : MonoBehaviour
 {
+    //Script by: Samantha Zavaleta Gonzalez
+
+
     //Accessing an audio that will play when our switch is pressed
     //Bool for when the trigger is active
     //Serializing our Triggeractivation which will have to be an object that has the LeverSwitch script attatched to it

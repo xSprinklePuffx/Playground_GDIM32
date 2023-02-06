@@ -5,6 +5,8 @@ using TMPro;
 
 public class ScoreDisplay : MonoBehaviour
 {
+    //Script by: Markesha Cody Big
+
     //Score text which we can set in Unity
     //Reference to ScoreManager script
     [SerializeField] private TMP_Text scoreText;

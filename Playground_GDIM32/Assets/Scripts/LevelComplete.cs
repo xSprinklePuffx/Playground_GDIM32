@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelComplete : MonoBehaviour
 {
+    //Script by: Markesha Cody Big
+
     //Serializing our audio for the completion sound effect
     [SerializeField] private AudioSource completeSoundEffect;
     private Animator anim;

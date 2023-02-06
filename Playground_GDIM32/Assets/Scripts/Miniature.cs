@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Miniature : PowerupEffect
 {
+    //Script by: Jacqueline Hernandez
+
     //Here we are setting up float components for our powerup effect
     [SerializeField] float multiplier;
     [SerializeField] float velocity;

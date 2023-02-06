@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class ItemCollector : PowerupEffect
 {
+    //Script by: Jacqueline Hernandez
+
     //The ScoreManager script is attatched to our player so we gain access to that to increment the score via the IncrementScore method
     //We also change the SpriteRenderer to yellow for funziez
     public override void Apply(GameObject target)

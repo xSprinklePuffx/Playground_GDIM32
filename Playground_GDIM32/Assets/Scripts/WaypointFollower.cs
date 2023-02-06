@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WaypointFollower : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Here I am creating a serialize list of waypoints so that I can drag and drop waypoints in Unity
     //I set the waypoint index to 0
     //I adjust the speed at which the onjects should move between waypoints (serialized so that we can edit the speed in Unity as well)

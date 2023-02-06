@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Invulerability : PowerupEffect
 {
+    //Script by: Jacqueline Hernandez
+
     //Here we are setting up float components for our powerup effect
     [SerializeField] float speed;
     [SerializeField] float multiplier;

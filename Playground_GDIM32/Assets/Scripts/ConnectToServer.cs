@@ -7,6 +7,8 @@ using TMPro;
 
 public class ConnectToServer : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Serializing the input field which is where our player will input their username
     //Serializing the button text that will say connecting when the player presses the connect button
     [SerializeField] TMP_InputField usernameInput;

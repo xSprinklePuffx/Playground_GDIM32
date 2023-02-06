@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Instance of the MenuManager meaning that we can access the menus here without the need for instantiating it again
     public static MenuManager Instance;
 

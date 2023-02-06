@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlatformTrigger : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //We will be accessing the TriggerPlatformMovement script for platform
     TriggerPlatformMovement platform;
 

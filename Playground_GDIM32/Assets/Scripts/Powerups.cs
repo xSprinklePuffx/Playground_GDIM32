@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Powerups : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Serializing the active time given to each powerup
     //Accessing a powerup effect with a PowerupEffect script attatched to it
     [SerializeField] PowerupEffect powerupEffect;

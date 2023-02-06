@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Players rigidbody
     private Rigidbody2D rb;
 

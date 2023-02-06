@@ -6,6 +6,8 @@ using TMPro;
 
 public class RespawnMenu : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Serializing respawn time
     //Serializing our countdown text
     //Serializing the respawn menu that will be displayed when our player dies

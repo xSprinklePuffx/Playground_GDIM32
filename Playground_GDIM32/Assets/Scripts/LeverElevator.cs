@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LeverElevator : MonoBehaviour
 {
+    //Script by: Samantha Zavaleta Gonzalez
+
     // Here we are serializing components and setting variables for our elevator
     // Accessing the LeverSwitch script so that we only accept objects that have that script attatched to them
     // MovetoPoint and nextPoint are the points which our elevator will follow

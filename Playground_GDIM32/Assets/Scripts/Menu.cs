@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Menu : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Bool for when our menu is open
     //String name for our menus
     public string menuName;

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ButtonElevator : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     // Here we are serializing components and setting variables for our elevator
     // Accessing the TriggerButton script so that we only accept objects that have that script attatched to them
     // MovetoPoint and nextPoint are the points which our elevator will follow

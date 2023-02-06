@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    //Script by: Jacqueline Hernandez
+
     //Initializng rigidbody of our player
     //Calling reference to the animator component
     //Creating a bool for when our player is facing right (this will help make sure our player turns the right way depending on which direction they are going)
