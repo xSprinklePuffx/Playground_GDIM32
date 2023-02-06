@@ -15,7 +15,7 @@ public class ProgressBar : MonoBehaviour
     private void Awake()
     {
         slider = gameObject.GetComponent<Slider>();
-        particleSys = GameObject.Find("Progress Bar Particles").GetComponent<ParticleSystem>();
+        particleSys = GameObject.Find("PB Sparkle").GetComponent<ParticleSystem>();
     }
     void Start()
     {
