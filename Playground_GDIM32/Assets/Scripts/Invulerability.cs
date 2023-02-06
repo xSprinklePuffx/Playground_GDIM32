@@ -6,10 +6,13 @@ using UnityEngine;
 
 public class Invulerability : PowerupEffect
 {
-    public float speed;
-    public float multiplier;
-    public float amount;
+    //Here we are setting up float components for our powerup effect
+    [SerializeField] float speed;
+    [SerializeField] float multiplier;
+    [SerializeField] float amount;
 
+    //Upon our player colliding with this powerup effect (player = target), their localScale will be increased, their jumps will be higher, their speed will be faster,
+    // and the sprite will have a grey hue to it
     public override void Apply(GameObject target)
     {
         target.transform.localScale *= multiplier;
@@ -18,6 +21,7 @@ public class Invulerability : PowerupEffect
         target.GetComponent<SpriteRenderer>().color = Color.grey;
     }
 
+    //After some time all the aforementioned effects will revert back to normal
     public override void Revert(GameObject target)
     {
         target.transform.localScale /= multiplier;
