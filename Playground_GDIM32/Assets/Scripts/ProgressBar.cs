@@ -19,7 +19,7 @@ public class ProgressBar : MonoBehaviour
     }
     void Start()
     {
-        //IncreaseProgress (0.50f);
+        IncreaseProgress (0.50f);
     }
 
 
