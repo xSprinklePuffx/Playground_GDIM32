@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class ConnectToServer : MonoBehaviour
+public class ConnectToServer : MonoBehaviourPunCallbacks
 {
     //Script by: Jacqueline Hernandez
 
@@ -19,13 +20,15 @@ public class ConnectToServer : MonoBehaviour
     {
         if (usernameInput.text.Length >= 1)
         {
+            PhotonNetwork.NickName = usernameInput.text;
             buttonText.text = "Connecting...";
-            Connect();
+            Debug.Log("Connecting To Master");
+            PhotonNetwork.ConnectUsingSettings();
         }
     }
 
     //Upon connection the player will connect to the lobby
-    public void Connect()
+    public override void OnConnectedToMaster()
     {
         SceneManager.LoadScene("Lobby");
     }

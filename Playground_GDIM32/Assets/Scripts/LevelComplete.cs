@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Photon.Pun;
+using Photon.Realtime;
+using System.Linq;
 
 public class LevelComplete : MonoBehaviour
 {
@@ -28,6 +30,6 @@ public class LevelComplete : MonoBehaviour
     //We will switch to the next scene
     private void CompleteLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PhotonNetwork.LoadLevel("MinigameOne");
     }
 }
