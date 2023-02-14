@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2306808843423533304}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlatformCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: -4316914005941524486}
   - component: {fileID: -1875515596162693816}
   - component: {fileID: -4565945938608286679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cat
   m_TagString: Player
   m_Icon: {fileID: 0}

@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: -1158004954698481333}
   - component: {fileID: -4454576736206749649}
   - component: {fileID: -4774242008348820107}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Panda
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7258305675629862067}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlatformCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

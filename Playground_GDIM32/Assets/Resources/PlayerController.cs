@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class PlayerController : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     //
 
+    PhotonView view;
+
     //Initializing audio source
     /*[SerializeField] private AudioSource jumpSoundEffect;*/
 
@@ -39,6 +42,8 @@ public class PlayerController : MonoBehaviour
 
         moveSpeed = 5f;
         jumpSpeed = 118f;
+
+        view = GetComponent<PhotonView>();
     }
 
     //Here we are checking if our player s touching the ground
@@ -46,6 +51,8 @@ public class PlayerController : MonoBehaviour
     //Furthermore, the animator.SetBool function is called everytime the player jump is true to activate the jump animation
     void Update()
     {
+        if (view.IsMine)
+        {
             isGrounded = Physics2D.OverlapCircle(platformCheck.position, platformCheckRadius, platformLayerMask);
 
             moveHorizontal = Input.GetAxisRaw("Horizontal");
@@ -74,6 +81,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("IsJumping", false);
                 animator.SetBool("IsFalling", true);
             }
+        }
     }
 
     //Here we are setting the move speed for the player dependng on which direction they are moving (horizontally)
@@ -81,10 +89,14 @@ public class PlayerController : MonoBehaviour
     //In the left direction and therefore we would use !facingRight to flip our player in the right direction.
     void FixedUpdate()
     {
-        if (moveHorizontal > 0.1f || moveHorizontal < -0.1f)
+        if (view.IsMine)
+        {
+            if (moveHorizontal > 0.1f || moveHorizontal < -0.1f)
             {
                 rb2D.AddForce(new Vector2(moveHorizontal * moveSpeed, 0f), ForceMode2D.Impulse);
             }
+        }
+
 
         if (moveHorizontal > 0 && !facingRight)
         {

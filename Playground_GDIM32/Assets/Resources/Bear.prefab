@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072889064597531069}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlatformCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: -7018314889846569843}
   - component: {fileID: 671708355629305222}
   - component: {fileID: 1791164723472728142}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bear
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -247,6 +247,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 8739708147227995805}
   - {fileID: -7018314889846569843}
+  - {fileID: 1791164723472728142}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

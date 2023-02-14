@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 134657447631116352}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlatformCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: -4168201891238316300}
   - component: {fileID: -8497198511138829231}
   - component: {fileID: -3055869832494069411}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bunny
   m_TagString: Player
   m_Icon: {fileID: 0}
