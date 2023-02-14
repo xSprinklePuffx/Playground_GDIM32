@@ -17,6 +17,7 @@ public class LevelComplete : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     //When our player triggers the door to the next level the completeSoundEffect will play and animator will also play

@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: -4168201891238316300}
   - component: {fileID: -8497198511138829231}
   - component: {fileID: -3055869832494069411}
+  - component: {fileID: 1193397822869677826}
   m_Layer: 7
   m_Name: Bunny
   m_TagString: Player
@@ -326,3 +327,15 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &1193397822869677826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3365029926882875619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd4526a24613f64ca7437e63a8de778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
