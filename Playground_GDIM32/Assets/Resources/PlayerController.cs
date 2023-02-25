@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
     //Script by: Jacqueline Hernandez
+
+    // Edited by: Markesha Big
+    // Placing code in when player is hurt by enemy.
+
+    // Number of lives the player has before death.
+
+    public int playerLives;
 
     //Initializng rigidbody of our player
     //Calling reference to the animator component
@@ -44,6 +52,7 @@ public class PlayerController : MonoBehaviour
         jumpSpeed = 118f;
 
         view = GetComponent<PhotonView>();
+
     }
 
     //Here we are checking if our player s touching the ground
@@ -117,4 +126,26 @@ public class PlayerController : MonoBehaviour
 
         facingRight = !facingRight;
     }
+
+    // When the enemy does damage to the player, this will reduce the lives
+    // or amount of hits that player can endure.
+
+    public void PlayerDamaged(int livesReduced)
+    {
+        // Reducing the player lives by one everytime the enemy hits them.
+
+        playerLives--;
+
+        // If the player has been hit to the point where they are at 0 lives then
+        // the player game object is destroyed.
+
+        if (playerLives <= 0)
+        {
+            // Ensuring to destroy the player.
+
+            Destroy(this.gameObject);
+
+        }
+    }
+
 }
