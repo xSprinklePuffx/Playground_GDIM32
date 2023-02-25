@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3068e6f23e066409912e6de431181a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLives: 3
   animator: {fileID: 3495469215121532027}
   jumpSpeed: 0
   moveSpeed: 0
