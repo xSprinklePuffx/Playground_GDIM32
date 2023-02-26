@@ -46,11 +46,10 @@ GameObject:
   - component: {fileID: 2072889064630251778}
   - component: {fileID: 2072889064630251779}
   - component: {fileID: 2072889064630251776}
-  - component: {fileID: 3306462546455561816}
   - component: {fileID: 8739708147227995805}
   - component: {fileID: -7018314889846569843}
   - component: {fileID: 1791164723472728142}
-  - component: {fileID: 6289473747938309942}
+  - component: {fileID: -7581683065512771282}
   m_Layer: 7
   m_Name: Bear
   m_TagString: Player
@@ -205,6 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3068e6f23e066409912e6de431181a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLives: 0
   animator: {fileID: 2072889064630251780}
   jumpSpeed: 0
   moveSpeed: 0
@@ -226,31 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd397f1a41214b6438217ccde42b88f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3306462546455561816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072889064630251777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 8739708147227995805}
-  - {fileID: -7018314889846569843}
-  - {fileID: 1791164723472728142}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &8739708147227995805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,7 +302,7 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &6289473747938309942
+--- !u!114 &-7581683065512771282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,6 +311,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2072889064630251777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdd4526a24613f64ca7437e63a8de778, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 8739708147227995805}
+  - {fileID: -7018314889846569843}
+  - {fileID: 1791164723472728142}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

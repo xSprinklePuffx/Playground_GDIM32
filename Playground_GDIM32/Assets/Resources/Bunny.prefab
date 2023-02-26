@@ -46,11 +46,10 @@ GameObject:
   - component: {fileID: 9222058350775283023}
   - component: {fileID: 7392722378406909421}
   - component: {fileID: 3495469215121532027}
-  - component: {fileID: -1821227789268554087}
   - component: {fileID: -4168201891238316300}
   - component: {fileID: -8497198511138829231}
   - component: {fileID: -3055869832494069411}
-  - component: {fileID: 1193397822869677826}
+  - component: {fileID: 3996791274388186420}
   m_Layer: 7
   m_Name: Bunny
   m_TagString: Player
@@ -227,31 +226,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-1821227789268554087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3365029926882875619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: -4168201891238316300}
-  - {fileID: -8497198511138829231}
-  - {fileID: -3055869832494069411}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &-4168201891238316300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +302,7 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1193397822869677826
+--- !u!114 &3996791274388186420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,6 +311,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 3365029926882875619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdd4526a24613f64ca7437e63a8de778, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: -4168201891238316300}
+  - {fileID: -8497198511138829231}
+  - {fileID: -3055869832494069411}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

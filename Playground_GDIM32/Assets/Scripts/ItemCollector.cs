@@ -14,7 +14,6 @@ public class ItemCollector : PowerupEffect
     //We also change the SpriteRenderer to yellow for funziez
     public override void Apply(GameObject target)
     {
-        target.GetComponent<ScoreManager>().IncrementScore(1);
         target.GetComponent<SpriteRenderer>().color = Color.yellow;
     }
 

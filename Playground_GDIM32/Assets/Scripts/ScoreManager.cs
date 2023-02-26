@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -11,28 +12,22 @@ public class ScoreManager : MonoBehaviour
 
     public int score { get; private set; }
 
+    public TextMeshProUGUI text;
+
 
     //Setting the inital value of our score
     //We use DontDestroyOnLoad to save our score from one scene to another
     private void Start()
     {
-        score= 0;
-
-        if (Instance == null)
+        if(Instance == null)
         {
-            DontDestroyOnLoad(gameObject);
             Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 
-
-    //Our score will go up by one each time
-    public void IncrementScore(int increment = 1)
+    public void ChangeScore(int coinValue)
     {
-        score += increment;
+        score += coinValue;
+        text.text = "Coins Collected: " + score.ToString();
     }
 }

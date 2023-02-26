@@ -4800,17 +4800,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2060457265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b47c896dcec9734eb0572b5422ae519, type: 3}
+  m_Script: {fileID: 11500000, guid: bfac7541ddf4cbf4ba209240d1f0c7a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   roomNameInputField: {fileID: 1767608454}
   errorText: {fileID: 829767584}
   roomNameText: {fileID: 1315948470}
   roomListContent: {fileID: 1422117255}
-  roomListItemPrefab: {fileID: 1768988850720953071, guid: 994065994be024449afb0e21d8967c13, type: 3}
+  roomListItemPrefab: {fileID: 1680208517627058918, guid: 994065994be024449afb0e21d8967c13, type: 3}
   startGameButton: {fileID: 912003247}
   playerItemsList: []
-  playerItemPrefab: {fileID: 1627390547850965198, guid: c7c3d45607913e5498ab006b9c0db6d1, type: 3}
+  playerItemPrefab: {fileID: 1931025840414850189, guid: c7c3d45607913e5498ab006b9c0db6d1, type: 3}
   playerItemParent: {fileID: 21553072}
 --- !u!1 &2131318020
 GameObject:
