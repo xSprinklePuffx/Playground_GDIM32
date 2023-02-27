@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     PhotonView view;
 
     //Initializing audio source
-    /*[SerializeField] private AudioSource jumpSoundEffect;*/
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     //Settinbg the values for move and jump speed as well as creating a reference of our rigidbody
     void Start()
@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("Jump") && isGrounded && rb2D.velocity.y == 0)
             {
                 rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
-                /*jumpSoundEffect.Play();*/
+                jumpSoundEffect.Play();
             }
 
             if (rb2D.velocity.y == 0)

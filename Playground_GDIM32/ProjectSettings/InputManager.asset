@@ -598,11 +598,11 @@ InputManager:
     axis: 5
     joyNum: 0
   - serializedVersion: 3
-    m_Name: 8Key
+    m_Name: P
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 8
+    positiveButton: p
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

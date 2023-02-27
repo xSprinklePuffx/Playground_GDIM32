@@ -11,13 +11,14 @@ public class LevelComplete : MonoBehaviour
 
     //Serializing our audio for the completion sound effect
     [SerializeField] private AudioSource completeSoundEffect;
+    [SerializeField] private AudioSource yaySoundEffect;
+
     private Animator anim;
 
     //Setting our animator component
     void Start()
     {
         anim = GetComponent<Animator>();
-        PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     //When our player triggers the door to the next level the completeSoundEffect will play and animator will also play
@@ -31,6 +32,7 @@ public class LevelComplete : MonoBehaviour
     //We will switch to the next scene
     private void CompleteLevel()
     {
-        PhotonNetwork.LoadLevel("MinigameOne");
+        MenuManager.Instance.OpenMenu("WinMenu");
+        yaySoundEffect.Play();
     }
 }

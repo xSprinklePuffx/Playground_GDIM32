@@ -18,25 +18,21 @@ public class PlayerDeath : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    //If our player collides with an enemy it will start a coroutine Death()
+    //If our player collides with an enemy it will pull up the DeathMenu
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("Enemy"))
         {
-            StartCoroutine(Death());
+            Death();
         }
     }
 
-    //The death coroutine will make it so that the player is unable to move the character
-    //The MenuManager will open a gameObject with the script 'Menu' on it where we assign the name called RespawnMenu
-    //After a couple of seconds we load the scene we were just on
+    //The player is unable to move the character
+    //The MenuManager will open a gameObject with the script 'Menu' on it where we assign the name called DeathMenu
 
-    IEnumerator Death()
+    public void Death()
     {
         rb.bodyType = RigidbodyType2D.Static;
-        MenuManager.Instance.OpenMenu("RespawnMenu");
-
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        MenuManager.Instance.OpenMenu("DeadMenu");
     }
 }
