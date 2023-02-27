@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class CameraSwitch : MonoBehaviour
 {
+    //Script by Jacqueline Hernandez
+
+    //Creating a list of camera GameObjects
     public GameObject[] Cameras;
 
+    //The camera we are currently on
     int currentCam;
 
-    // Start is called before the first frame update
+    //Of course we start at camera at index level 0
+    //We set the camera to our camera at index level 0
     void Start()
     {
         currentCam = 0;
         setCam(currentCam);
     }
 
-    // Update is called once per frame
+    //We use an update method to determine whether or not the player clicked the Tab button to switch cameras
+    //We call a method toggleCam which will switch between the cameras
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -24,6 +30,7 @@ public class CameraSwitch : MonoBehaviour
         }
     }
 
+    //Each time Tab is pressed the camera will switch to a different one so we want to be sure to disable all ofther cameras besides the one we are on
     void setCam(int idx)
     {
         for (int i = 0; i < Cameras.Length; i++)
@@ -39,6 +46,7 @@ public class CameraSwitch : MonoBehaviour
         }
     }
 
+    //Each time Tab is pressed the camera will switch to the camera at the next index number
     void toggleCam()
     {
         currentCam++;
