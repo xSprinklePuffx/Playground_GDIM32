@@ -1248,8 +1248,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 338.70227}
-  m_SizeDelta: {x: 1330.923, y: 306.676}
+  m_AnchoredPosition: {x: -0.0000076294, y: 371}
+  m_SizeDelta: {x: 1543.899, y: 332.491}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1802513697
 MonoBehaviour:
@@ -1271,7 +1271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Welcome To The Playground
+  m_text: Welcome To Super Mario Simulator
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c632b27e05be9fe4a90993eaf58ede9d, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: d91c50b4f3cb623429ea65a6a8c97866, type: 2}
