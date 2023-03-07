@@ -12,6 +12,10 @@ public class PlayerDeath : MonoBehaviour
     //Players rigidbody
     private Rigidbody2D rb;
 
+    //Death Sound Effect
+    [SerializeField] private AudioSource deathSoundEffect;
+
+
     //Accessing that component
     void Start()
     {
@@ -25,6 +29,11 @@ public class PlayerDeath : MonoBehaviour
         {
             Death();
         }
+
+        if (collider.gameObject.CompareTag("Saw"))
+        {
+            Death();
+        }
     }
 
     //The player is unable to move the character
@@ -33,6 +42,7 @@ public class PlayerDeath : MonoBehaviour
     public void Death()
     {
         rb.bodyType = RigidbodyType2D.Static;
+        deathSoundEffect.Play();
         MenuManager.Instance.OpenMenu("DeadMenu");
     }
 }

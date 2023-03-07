@@ -24,9 +24,12 @@ public class LevelComplete : MonoBehaviour
     //When our player triggers the door to the next level the completeSoundEffect will play and animator will also play
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        anim.SetBool("Opened", true);
-        completeSoundEffect.Play();
-        Invoke("CompleteLevel", 2f);
+        if (collider.gameObject.CompareTag("Player"))
+        {
+            anim.SetBool("Opened", true);
+            completeSoundEffect.Play();
+            Invoke("CompleteLevel", 2f);
+        }
     }
 
     //We will switch to the next scene
