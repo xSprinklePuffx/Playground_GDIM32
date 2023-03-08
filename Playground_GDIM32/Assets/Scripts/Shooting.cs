@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class Shooting : MonoBehaviour
 {
@@ -11,18 +12,28 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
+    PhotonView view;
+
     //Initializing an audiosource for the shooting sound effect;
     [SerializeField] private AudioSource shootSoundEffect;
+
+    void Start()
+    {
+        view = GetComponent<PhotonView>();
+    }
 
     //Update is called everytime the shift key is pressed (Fire1)
     //The shoot sound effect plays
     //Shoot method is called
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if (view.IsMine)
         {
-            shootSoundEffect.Play();
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                shootSoundEffect.Play();
+                Shoot();
+            }
         }
     }
 
