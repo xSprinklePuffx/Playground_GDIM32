@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ChaseControls : MonoBehaviour
+{
+    public FlyingAI[] aiArray;
+    //when player enters within distance of enemies, they will begin to chase
+    private void OnTriggerEnter2D(Collider2D collision) 
+    {
+        if (collision.CompareTag("Player"))
+        {
+            foreach (FlyingAI enemy in aiArray)
+            {
+                enemy.chase = true;
+            }
+        }
+    }
+
+    //when player is not within distance of enemies, they will not chase/stop chasing
+    private void OnTriggerExit2D (Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            foreach (FlyingAI enemy in aiArray)
+            {
+                enemy.chase = false;
+            }
+        }
+    }
+}
